@@ -1,0 +1,41 @@
+{
+  "name": "usf-connect-platform",
+  "version": "1.0.0",
+  "description": "USF CONNECT 2.0 - AI-Powered Innovation & Economic Development Platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "lucide-react": "^0.263.1",
+    "next": "^14.2.30",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.15.3",
+    "tailwindcss": "^3.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "USF",
+    "CONNECT",
+    "innovation",
+    "economic-development",
+    "AI",
+    "portfolio-management",
+    "university-of-south-florida"
+  ],
+  "author": "USF CONNECT",
+  "license": "MIT"
+}

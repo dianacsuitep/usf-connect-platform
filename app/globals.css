@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for USF CONNECT Platform */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  /* Custom component styles */
+  .usf-gradient {
+    background: linear-gradient(135deg, #006747 0%, #4A8B3B 100%);
+  }
+  
+  .usf-card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .usf-button-primary {
+    @apply bg-usf-green text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 font-medium;
+  }
+  
+  .usf-button-secondary {
+    @apply bg-usf-gold text-usf-dark-gray px-4 py-2 rounded-lg hover:opacity-90 transition-opacity duration-200 font-medium;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .text-usf-green {
+    color: #006747;
+  }
+  
+  .text-usf-gold {
+    color: #CFC493;
+  }
+  
+  .bg-usf-green {
+    background-color: #006747;
+  }
+  
+  .bg-usf-gold {
+    background-color: #CFC493;
+  }
+  
+  .border-usf-green {
+    border-color: #006747;
+  }
+  
+  .border-usf-gold {
+    border-color: #CFC493;
+  }
+  
+  /* Scrollbar customization */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #006747 #f1f5f9;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #006747;
+    border-radius: 3px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4A8B3B;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .usf-card {
+    @apply shadow-none border border-gray-300;
+  }
+}
